@@ -1,0 +1,20 @@
+{
+  "name": "code-review-matpocock",
+  "interface": {
+    "displayName": "code-review-matpocock"
+  },
+  "plugins": [
+    {
+      "name": "code-review-matpocock",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+The bundled Claude review adaptation derives from Matt Pocock's MIT-licensed skills.
+Copyright (c) 2026 Matt Pocock. Full license: common/claude/LICENSE.
+Upstream: https://github.com/mattpocock/skills
+Native Codex adaptation and packaging: Copyright (c) 2026 Dmitry Kropachev, MIT.

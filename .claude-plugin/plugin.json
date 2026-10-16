@@ -1,0 +1,11 @@
+{
+  "name": "code-review-matpocock",
+  "version": "1.0.0",
+  "description": "Independent Standards and Spec review with Matt Pocock methodology.",
+  "author": {
+    "name": "Dmitry Kropachev"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/dk-code-factory/code-review-matpocock",
+  "skills": "./claude/skills/"
+}

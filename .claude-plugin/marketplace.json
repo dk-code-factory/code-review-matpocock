@@ -1,0 +1,14 @@
+{
+  "name": "code-review-matpocock",
+  "owner": {
+    "name": "dk-code-factory"
+  },
+  "plugins": [
+    {
+      "name": "code-review-matpocock",
+      "source": "./",
+      "description": "code-review-matpocock",
+      "version": "1.0.0"
+    }
+  ]
+}
