@@ -38,7 +38,19 @@ Give each sub-agent the exact diff command and commit list. Keep their assignmen
 - **Standards:** Provide applicable standards files and the full smell baseline above. Ask for documented-rule violations with file and rule citations, plus concrete smell findings labelled as judgment calls with the relevant diff hunk. Skip tool-enforced issues. Limit to 400 words.
 - **Spec:** Provide the spec path or contents. Ask for missing or partial requirements, behavior outside scope, and requirements implemented incorrectly. Require a spec citation for every finding. Limit to 400 words.
 
-If parallel agents are unavailable, perform the axes separately yourself. Check each finding against the diff before reporting it.
+If a child reviewer definitely fails to start without returning a usable agent ID,
+retry that axis once with the same diff, commit list, evidence and instructions.
+For example, a thread-store error reporting no saved rollout qualifies for this
+startup retry. Retain any reviewer that already started; when a spawn call returns
+an agent ID, inspect or wait for that agent instead of launching a duplicate.
+Do not retry unavailable tools, permission refusals or explicit capacity/usage
+limits, and do not rerun a completed review as a startup retry.
+
+If the retry also fails, or parallel agents are unavailable, perform only the
+axes that could not start separately yourself. Wait for reviewers that already
+started and retain their results.
+Disclose the startup error, retry outcome and any loss of axis independence.
+Check each finding against the diff before reporting it.
 
 ## Report
 
